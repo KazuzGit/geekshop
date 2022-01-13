@@ -3,6 +3,7 @@ from django.urls import path
 
 import mainapp.views as mainapp
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", mainapp.main, name="main"),
@@ -14,3 +15,4 @@ urlpatterns = [
     path("products/classic", mainapp.products, name="products_classic"),
     path("contact/", mainapp.contact, name="contact"),
 ]
+
