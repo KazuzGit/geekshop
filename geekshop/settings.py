@@ -21,9 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = (
-    "django-insecure-9i#7_#%$+&a9^118ao5s8x7bqtd^7v)j$4&116oyrhn4u#2s&7"
-)
+SECRET_KEY = "django-insecure-9i#7_#%$+&a9^118ao5s8x7bqtd^7v)j$4&116oyrhn4u#2s&7"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -34,18 +32,18 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'mainapp',
-    'authnapp',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "mainapp",
+    "authnapp",
 ]
 
 # Auth model
-AUTH_USER_MODEL = 'authnapp.ShopUser'
+AUTH_USER_MODEL = "authnapp.ShopUser"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
