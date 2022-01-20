@@ -1,5 +1,5 @@
-from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
 
+from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
 from basketapp.models import Basket
 from mainapp.models import Product
 
@@ -11,6 +11,7 @@ def basket(request):
 
 
 def basket_add(request, pk):
+
     product = get_object_or_404(Product, pk=pk)
     basket = Basket.objects.filter(user=request.user, product=product).first()
 

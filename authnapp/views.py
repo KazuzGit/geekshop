@@ -20,6 +20,7 @@ def login(request):
             return HttpResponseRedirect(reverse("main"))
 
     content = {"title": title, "login_form": login_form}
+
     return render(request, "authnapp/login.html", content)
 
 
@@ -40,6 +41,7 @@ def register(request):
     else:
         register_form = ShopUserRegisterForm()
 
+
     content = {"title": title, "register_form": register_form}
     return render(request, "authnapp/register.html", content)
 
@@ -52,6 +54,7 @@ def edit(request):
         if edit_form.is_valid():
             edit_form.save()
             return HttpResponseRedirect(reverse("auth:edit"))
+
     else:
         edit_form = ShopUserEditForm(instance=request.user)
 

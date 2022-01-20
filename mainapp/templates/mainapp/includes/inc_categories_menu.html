@@ -9,6 +9,7 @@
     <li>
         <a href="{% url 'products:category' link.pk %}"
             class="{% if request.resolver_match.kwargs.pk == link.pk %}active{% endif %}">
+
             {{ link.name }}
         </a>
     </li>
