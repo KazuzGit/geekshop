@@ -5,7 +5,6 @@ from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
 from django.template.loader import render_to_string
 from django.urls import reverse
 
-
 from basketapp.models import Basket
 from mainapp.models import Product
 
