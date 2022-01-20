@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     "mainapp",
     "authnapp",
     "basketapp",
-
 ]
 
 # Auth model
@@ -140,8 +139,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 MEDIA_URL = "/media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
-# Set login path:
-#   https://docs.djangoproject.com/en/3.2/ref/settings/#login-url
-LOGIN_URL = "authnapp:login"
-

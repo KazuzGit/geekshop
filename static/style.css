@@ -265,8 +265,7 @@ html, body {
 .slider {
 	height: 800px;
 	background-image: url(/static/img/slider.jpg);
-	/*padding-left: 98px;*/
-	padding-left: 78px;
+	padding-left: 98px;
 	padding-right: 211px;
 	position: relative;
 }
@@ -324,8 +323,7 @@ html, body {
 	background-image: url(/static/img/search.png);
 	position: absolute;
 	top: 63px;
-	/*left: 1176px;*/
-	left: 1146px;
+	left: 1176px;
 }
 
 .basket {
@@ -335,16 +333,13 @@ html, body {
 	background-image: url(/static/img/basket.png);
 	position: absolute;
 	top: 63px;
-	/*left: 1210px;*/
-	left: 1180px;
+	left: 1210px;
 	text-decoration: none;
 	color: #555;
 }
 
 .basket span {
-	display: block;
-	margin-left: 30px;
-	width: 150px;
+	margin-left: 25px;
 }
 
 .clearfix:after {
@@ -1237,8 +1232,7 @@ td:first-child {
 	padding-left: 98px;
 	padding-right: 98px;
 	margin-top: 98px;
-	/*height: 651px; */
-	height: 551px;
+	height: 651px;
 }
 
 .details-slider {
@@ -1249,8 +1243,7 @@ td:first-child {
 
 .slider-product {
 	width: 570px;
-	/*height: 570px;*/
-	height: 400px;
+	height: 570px;
 }
 
 .slider-control {
@@ -1372,19 +1365,16 @@ td:first-child {
 }
 
 .related .title {
-	/*height: 343px;*/
-	height: 143px;
+	height: 343px;
 	margin-right: 0;
 }
 
 .related .title h2 {
-	/*margin-top: 245px;*/
-	margin-top: 45px;
+	margin-top: 245px;
 }
 
 .related .title .explore {
-	/*margin-top: 262px;*/
-	margin-top: 62px;
+	margin-top: 262px;
 }
 
 .related-products {
@@ -1443,10 +1433,4 @@ td:first-child {
 
 .related-products a:hover .text {
 	display: block;
-}
-
-
-.slider-product img {
-	width: 100%;
-
 }
