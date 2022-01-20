@@ -64,10 +64,10 @@ def products(request, pk=None):
         "links_menu": links_menu,
         "same_products": same_products,
         "media_url": settings.MEDIA_URL,
-
         "basket": basket,
         "hot_product": hot_product,
     }
+
 
     return render(request, "mainapp/products.html", content)
 
