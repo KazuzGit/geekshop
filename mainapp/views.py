@@ -76,7 +76,6 @@ def products(request, pk=None, page=1):
         "basket": basket,
         "hot_product": hot_product,
     }
-    return render(request, "mainapp/products.html", content)
 
 
 def product(request, pk):
