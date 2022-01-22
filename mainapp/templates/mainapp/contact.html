@@ -1,5 +1,5 @@
 {% extends 'mainapp/base.html' %}
-{% load static %}
+{% load static mail_to %}
 
 
 {% block menu %}
@@ -10,7 +10,7 @@
     <h1>наши контакты</h1>
     <p>сегодня: {{ visit_date|date:"l, j F, Y" }}</p>
 </div>
-{% endblock menu %}
+{% endblock %}
 
 {% block content %}
 <div class="location">
@@ -24,7 +24,7 @@
         </div>
         <div class="contacts">
             <h5>Email</h5>
-            <p>{{ location.email }}</p>
+            <p>{{ location.email|mail_to }}</p>
         </div>
         <div class="contacts">
             <h5>Адрес</h5>
@@ -35,4 +35,4 @@
 </div>
 
 <div class="clr"></div>
-{% endblock content %}
+{% endblock %}
