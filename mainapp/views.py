@@ -76,6 +76,7 @@ def products(request, pk=None, page=1):
         "basket": basket,
         "hot_product": hot_product,
     }
+    return render(request, "mainapp/products.html", content)
 
 
 def product(request, pk):
@@ -95,4 +96,5 @@ def contact(request):
     visit_date = timezone.now()
     locations = Contact.objects.all()
     content = {"title": title, "visit_date": visit_date, "locations": locations}
+
     return render(request, "mainapp/contact.html", content)
