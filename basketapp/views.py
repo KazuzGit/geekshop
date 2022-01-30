@@ -21,7 +21,6 @@ def basket(request):
 def basket_add(request, pk):
     if "login" in request.META.get("HTTP_REFERER"):
         return HttpResponseRedirect(reverse("products:product", args=[pk]))
-
     product = get_object_or_404(Product, pk=pk)
     basket = Basket.objects.filter(user=request.user, product=product).first()
 
@@ -44,7 +43,12 @@ def basket_remove(request, pk):
 @login_required
 def basket_edit(request, pk, quantity):
     if request.is_ajax():
-        print(f"{pk} - {quantity}")
+        try:
+            pk = int(pk)
+            quantity = int(quantity)
+        except Exception as exp:
+            print(f"Wrong input numbers! {exp}")
+            raise exp
         new_basket_item = Basket.objects.get(pk=int(pk))
 
         if quantity > 0:
